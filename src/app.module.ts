@@ -16,6 +16,7 @@ import { UsersModule } from './app/users/users.module';
       username: process.env.DB_USER,
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
+      entities: [User],
       synchronize: true, // true só ambiente de dev, false só ambiente de prod
       autoLoadEntities: true, // Carrega entities registradas nos módulos
     }),
